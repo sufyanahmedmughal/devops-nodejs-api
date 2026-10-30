@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.get('/health', (req, res) => {
+app.get('/', (req, res) => {
     res.json({
         status: 'Success',
         message: 'Welcome to DevOps Node.js REST API!',
